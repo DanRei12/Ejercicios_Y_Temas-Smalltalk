@@ -1,0 +1,5 @@
+extraer: unValor
+  ^self subclassResponsibility.
+
+depositar: unValor
+  ^self subclassResponsibility.

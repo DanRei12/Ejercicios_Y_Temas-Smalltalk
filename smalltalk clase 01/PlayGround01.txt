@@ -1,0 +1,11 @@
+5 + 5.
+
+'Hola ' , '2K5'.
+
+Transcript show: 5.
+
+Transcript show: 5 + 5.
+
+Transcript show: 'Hola ' , '2K5'.
+
+Transcript clear.

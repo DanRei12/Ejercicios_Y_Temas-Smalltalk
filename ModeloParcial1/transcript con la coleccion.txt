@@ -1,0 +1,42 @@
+|unaTarjeta unaTarjetaDebito unaTarjetaCredito unaEntidadFinanciera|
+
+unaTarjetaDebito := TarjetaDebito new.
+unaTarjetaDebito numero: 1.
+unaTarjetaDebito saldo:  100.
+unaTarjetaDebito titular: 'Silvio'.
+unaTarjetaDebito banco: 'BNA'.
+
+unaTarjetaCredito := TarjetaCredito new.
+unaTarjetaCredito numero: 2.
+unaTarjetaCredito saldo:  100.
+unaTarjetaCredito titular: 'Silvio'.
+unaTarjetaCredito limite: 200.
+
+unaEntidadFinanciera := EntidadFinanciera new.
+unaEntidadFinanciera nombre: 'ICBC Debitos & Creditos'.
+
+unaEntidadFinanciera addTarjeta: unaTarjetaCredito.
+unaEntidadFinanciera addTarjeta: unaTarjetaDebito.
+
+Transcript  clear.
+Transcript show: unaEntidadFinanciera asString.
+
+unaEntidadFinanciera depositar: 100 numero: 1.
+unaEntidadFinanciera depositar: 100 numero: 2.
+
+Transcript  cr.
+Transcript show: unaEntidadFinanciera asString.
+
+unaTarjeta := Tarjeta new.
+unaTarjeta numero: 3.
+unaTarjeta saldo: 50.
+unaTarjeta titular: 'Laura'.
+
+unaEntidadFinanciera addTarjeta: unaTarjeta.
+Transcript  cr.
+Transcript show: unaEntidadFinanciera asString.
+
+"Pero ojo que si dejamos una referencia externa podemos cambiar el contenido del objeto"
+unaTarjeta numero: 100.
+Transcript  cr.
+Transcript show: unaEntidadFinanciera asString.

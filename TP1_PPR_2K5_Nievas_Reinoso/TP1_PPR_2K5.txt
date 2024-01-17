@@ -1,0 +1,48 @@
+Código para probar Hotel:
+
+| hotel1 |
+hotel1 := Hotel new.
+hotel1 nombre: 'La Isla'.
+hotel1 categoria: '*****'.
+hotel1 cantHabitaciones: 15.
+hotel1 precio: 520.
+Transcript clear.
+Transcript show: hotel1 asString; cr; show: hotel1 cantidadEstrellas.
+
+
+
+Código para probar Vuelo:
+
+| vuelo1 |
+vuelo1 := Vuelo new.
+vuelo1 nombreComp: 'Aerolíneas Argentinas'.
+vuelo1 duracion: 2.5.
+Transcript clear.
+Transcript show: vuelo1 asString.
+
+
+
+Código para probar Camarote:
+
+| camarote1 |
+camarote1 := Camarote new.
+camarote1 numero: 54.
+camarote1 categoria: 'Turista'.
+camarote1 precio: 360.
+camarote1 reservado: true.
+Transcript clear.
+Transcript show: camarote1 asString.
+
+
+
+Código para probar Paquete:
+
+| paquete1 |
+paquete1 := Paquete new.
+paquete1 nombre: 'Playa'.
+paquete1 origen: 'Córdoba'.
+paquete1 destino: 'Natal'.
+paquete1 cantDias: 7.
+paquete1 precioBase: 10400.
+Transcript clear.
+Transcript show: paquete1 asString.

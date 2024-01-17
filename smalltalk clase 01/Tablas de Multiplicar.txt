@@ -1,0 +1,48 @@
+|numero|
+numero := 2.
+Transcript clear.
+Transcript show: numero asString, '*', '1', '=', (numero * 1) asString .
+Transcript cr.
+Transcript show: numero asString, '*', '2', '=', (numero * 2) asString .
+Transcript cr.
+Transcript show: numero asString, '*', '3', '=', (numero * 3) asString .
+Transcript cr.
+Transcript show: numero asString, '*', '1', '=', (numero * 4) asString .
+Transcript cr.
+Transcript show: numero asString, '*', '1', '=', (numero * 5) asString .
+Transcript cr.
+Transcript show: numero asString, '*', '1', '=', (numero * 6) asString .
+Transcript cr.
+Transcript show: numero asString, '*', '1', '=', (numero * 7) asString .
+Transcript cr.
+Transcript show: numero asString, '*', '1', '=', (numero * 8) asString .
+Transcript cr.
+Transcript show: numero asString, '*', '1', '=', (numero * 9) asString .
+Transcript cr.
+Transcript show: numero asString, '*', '1', '=', (numero * 10) asString .
+
+
+"Otro ejemplo"
+|numero cont|
+Transcript clear.
+numero := 5.
+cont := 1.
+10 timesRepeat: [ Transcript show: (numero * cont). 
+							 Transcript cr.
+							 cont := cont + 1. ].
+
+
+
+"Otro Ejemplo"
+|numero cont cuantos|
+Transcript clear.
+numero := 5.
+cont := 1.
+cuantos := 10.
+cuantos timesRepeat: [ Transcript show: numero.
+							 Transcript show: '*'.
+							 Transcript show: cont.
+							 Transcript show: '='.							
+							 Transcript show: (numero * cont). 
+							 Transcript cr.
+							 cont := cont + 1.].

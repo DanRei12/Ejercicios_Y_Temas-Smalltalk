@@ -1,0 +1,16 @@
+|unInsumo|
+unInsumo := InsumoSimple new.
+unInsumo codigo: 5.
+unInsumo valor: 100.
+unInsumo nombre: 'tuercas'.
+unInsumo cantidad: '3'.
+Transcript clear.
+Transcript show: unInsumo codigo.
+Transcript cr.
+Transcript show: unInsumo nombre.
+Transcript cr.
+Transcript show: unInsumo cantidad.
+Transcript cr.
+Transcript show: unInsumo valor.
+Transcript cr.
+Transcript show: unInsumo valorTotal.
